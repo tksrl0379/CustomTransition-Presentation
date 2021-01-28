@@ -43,11 +43,11 @@ extension MainVC: UIViewControllerTransitioningDelegate {
     }
     
     // 2
-//    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-//        return CustomAnimator(isPresenting: true)
-//    }
-//
-//    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-//        return CustomAnimator(isPresenting: false)
-//    }
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return CustomAnimator(isPresenting: true)
+    }
+
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return CustomAnimator(isPresenting: false)
+    }
 }
