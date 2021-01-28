@@ -37,10 +37,15 @@ class MainVC: UIViewController {
 
 extension MainVC: UIViewControllerTransitioningDelegate {
     
+    // MARK: Custom Presentation ( Presentation Controller )
+    
     // 1
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         CustomPresentationController(presentedViewController: presented, presenting: presenting)
     }
+    
+    
+    // MARK: Custom Transition ( Animator Object )
     
     // 2
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
