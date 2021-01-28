@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SecondVC.swift
 //  CustomTransition&Presentation
 //
 //  Created by USER on 2021/01/28.
@@ -7,13 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SideVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        view.backgroundColor = .systemGreen
     }
-
-
 }
-

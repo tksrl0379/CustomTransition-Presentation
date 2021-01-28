@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		CEE8122925C2925F00E0773D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8122825C2925F00E0773D /* AppDelegate.swift */; };
 		CEE8122B25C2925F00E0773D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8122A25C2925F00E0773D /* SceneDelegate.swift */; };
-		CEE8122D25C2925F00E0773D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8122C25C2925F00E0773D /* ViewController.swift */; };
+		CEE8122D25C2925F00E0773D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8122C25C2925F00E0773D /* MainVC.swift */; };
 		CEE8123025C2925F00E0773D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE8122E25C2925F00E0773D /* Main.storyboard */; };
 		CEE8123225C2926100E0773D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE8123125C2926100E0773D /* Assets.xcassets */; };
 		CEE8123525C2926100E0773D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE8123325C2926100E0773D /* LaunchScreen.storyboard */; };
+		CEE8123F25C295FA00E0773D /* SideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8123E25C295FA00E0773D /* SideVC.swift */; };
+		CEE8124525C2C24000E0773D /* CustomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8124425C2C24000E0773D /* CustomAnimator.swift */; };
+		CEE8124925C2C25D00E0773D /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8124825C2C25D00E0773D /* CustomPresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEE8122525C2925F00E0773D /* CustomTransition&Presentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CustomTransition&Presentation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE8122825C2925F00E0773D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEE8122A25C2925F00E0773D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEE8122C25C2925F00E0773D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEE8122C25C2925F00E0773D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		CEE8122F25C2925F00E0773D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEE8123125C2926100E0773D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEE8123425C2926100E0773D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEE8123625C2926100E0773D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE8123E25C295FA00E0773D /* SideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideVC.swift; sourceTree = "<group>"; };
+		CEE8124425C2C24000E0773D /* CustomAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimator.swift; sourceTree = "<group>"; };
+		CEE8124825C2C25D00E0773D /* CustomPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,10 @@
 			children = (
 				CEE8122825C2925F00E0773D /* AppDelegate.swift */,
 				CEE8122A25C2925F00E0773D /* SceneDelegate.swift */,
-				CEE8122C25C2925F00E0773D /* ViewController.swift */,
+				CEE8122C25C2925F00E0773D /* MainVC.swift */,
+				CEE8123E25C295FA00E0773D /* SideVC.swift */,
+				CEE8124425C2C24000E0773D /* CustomAnimator.swift */,
+				CEE8124825C2C25D00E0773D /* CustomPresentationController.swift */,
 				CEE8122E25C2925F00E0773D /* Main.storyboard */,
 				CEE8123125C2926100E0773D /* Assets.xcassets */,
 				CEE8123325C2926100E0773D /* LaunchScreen.storyboard */,
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEE8122D25C2925F00E0773D /* ViewController.swift in Sources */,
+				CEE8122D25C2925F00E0773D /* MainVC.swift in Sources */,
 				CEE8122925C2925F00E0773D /* AppDelegate.swift in Sources */,
+				CEE8124925C2C25D00E0773D /* CustomPresentationController.swift in Sources */,
+				CEE8123F25C295FA00E0773D /* SideVC.swift in Sources */,
+				CEE8124525C2C24000E0773D /* CustomAnimator.swift in Sources */,
 				CEE8122B25C2925F00E0773D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,15 +298,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G25S6896QZ;
+				DEVELOPMENT_TEAM = B3PWYBKFUK;
 				INFOPLIST_FILE = "CustomTransition&Presentation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CustomTransition-Presentation";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CustomTransition-Presentationdd";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,15 +319,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G25S6896QZ;
+				DEVELOPMENT_TEAM = B3PWYBKFUK;
 				INFOPLIST_FILE = "CustomTransition&Presentation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CustomTransition-Presentation";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CustomTransition-Presentationdd";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
