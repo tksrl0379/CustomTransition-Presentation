@@ -53,6 +53,18 @@ extension MainVC: UIViewControllerTransitioningDelegate {
     }
 
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return CustomAnimator(isPresenting: false)
+        return CustomAnimator(isPresenting: false, interactionController: (dismissed as? SideVC)?.swipeInteractionController)
+    }
+    
+    // Second VC 에서 dismiss 시 호출됨
+    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        guard
+            let animator = animator as? CustomAnimator,
+            let interactionController = animator.interactionController,
+            interactionController.interactionInProgress else {
+                return nil
+        }
+        
+        return interactionController
     }
 }

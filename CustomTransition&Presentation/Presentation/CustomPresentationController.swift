@@ -15,7 +15,7 @@ class CustomPresentationController: UIPresentationController {
         var presentedViewFrame: CGRect = .zero
         let containerBounds = containerView!.bounds
         
-        presentedViewFrame.size = CGSize(width: containerBounds.width * 0.7,
+        presentedViewFrame.size = CGSize(width: containerBounds.width * 0.8,
                                          height: containerBounds.height)
         
         return presentedViewFrame
@@ -27,7 +27,7 @@ class CustomPresentationController: UIPresentationController {
         super.init(presentedViewController: presentedViewController, presenting: presentingViewController)
         
         dimmingView.translatesAutoresizingMaskIntoConstraints = false
-        dimmingView.backgroundColor = UIColor(white: 0, alpha: 0.1)
+        dimmingView.backgroundColor = UIColor(white: 0, alpha: 0.2)
         dimmingView.alpha = 0
         
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(dimmingViewTapped))
@@ -62,6 +62,12 @@ class CustomPresentationController: UIPresentationController {
 //            self.presentingViewController.view.frame.origin.x += self.presentedView!.frame.width
         }
     }
+    
+    
+    override func presentationTransitionDidEnd(_ completed: Bool) {
+        super.presentationTransitionDidEnd(completed)
+    }
+
     
     
     // MARK: Dismissal

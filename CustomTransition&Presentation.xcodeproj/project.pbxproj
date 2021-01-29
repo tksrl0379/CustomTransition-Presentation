@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE90894C25C3A4B2009D5410 /* CustomInteractionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90894B25C3A4B2009D5410 /* CustomInteractionAnimator.swift */; };
 		CEE8122925C2925F00E0773D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8122825C2925F00E0773D /* AppDelegate.swift */; };
 		CEE8122B25C2925F00E0773D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8122A25C2925F00E0773D /* SceneDelegate.swift */; };
 		CEE8122D25C2925F00E0773D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8122C25C2925F00E0773D /* MainVC.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE90894B25C3A4B2009D5410 /* CustomInteractionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInteractionAnimator.swift; sourceTree = "<group>"; };
 		CEE8122525C2925F00E0773D /* CustomTransition&Presentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CustomTransition&Presentation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE8122825C2925F00E0773D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEE8122A25C2925F00E0773D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE90894E25C3A4CF009D5410 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CEE8124825C2C25D00E0773D /* CustomPresentationController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CE90894F25C3A4F8009D5410 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				CEE8124425C2C24000E0773D /* CustomAnimator.swift */,
+				CE90894B25C3A4B2009D5410 /* CustomInteractionAnimator.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		CE90895025C3A512009D5410 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CEE8122C25C2925F00E0773D /* MainVC.swift */,
+				CEE8123E25C295FA00E0773D /* SideVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		CEE8121C25C2925F00E0773D = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +92,9 @@
 			children = (
 				CEE8122825C2925F00E0773D /* AppDelegate.swift */,
 				CEE8122A25C2925F00E0773D /* SceneDelegate.swift */,
-				CEE8122C25C2925F00E0773D /* MainVC.swift */,
-				CEE8123E25C295FA00E0773D /* SideVC.swift */,
-				CEE8124425C2C24000E0773D /* CustomAnimator.swift */,
-				CEE8124825C2C25D00E0773D /* CustomPresentationController.swift */,
+				CE90895025C3A512009D5410 /* VC */,
+				CE90894E25C3A4CF009D5410 /* Presentation */,
+				CE90894F25C3A4F8009D5410 /* Transitions */,
 				CEE8122E25C2925F00E0773D /* Main.storyboard */,
 				CEE8123125C2926100E0773D /* Assets.xcassets */,
 				CEE8123325C2926100E0773D /* LaunchScreen.storyboard */,
@@ -147,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE8122D25C2925F00E0773D /* MainVC.swift in Sources */,
+				CE90894C25C3A4B2009D5410 /* CustomInteractionAnimator.swift in Sources */,
 				CEE8122925C2925F00E0773D /* AppDelegate.swift in Sources */,
 				CEE8124925C2C25D00E0773D /* CustomPresentationController.swift in Sources */,
 				CEE8123F25C295FA00E0773D /* SideVC.swift in Sources */,

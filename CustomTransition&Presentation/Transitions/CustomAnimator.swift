@@ -9,11 +9,14 @@ import UIKit
 
 class CustomAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
-    private let isPresenting: Bool
-    private let duration: TimeInterval = 0.3
+    let interactionController: SwipeInteractionController?
     
-    init(isPresenting: Bool) {
+    private let isPresenting: Bool
+    private let duration: TimeInterval = 0.15
+    
+    init(isPresenting: Bool, interactionController: SwipeInteractionController? = nil) {
         self.isPresenting = isPresenting
+        self.interactionController = interactionController
         
         super.init()
     }
@@ -47,12 +50,15 @@ class CustomAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         
         sideVC.view.frame = initialFrame
         
-        // 6
-        UIView.animate(withDuration: duration) {
+        
+        UIView.animate(withDuration: duration, delay: 0, options: .curveLinear) {
+            // 6
             sideVC.view.frame = finalFrame
             mainVC.view.frame.origin.x += (self.isPresenting ? finalFrame.width : -finalFrame.width)
         } completion: { _ in
-            transitionContext.completeTransition(true)
+            transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
         }
     }
 }
+
+
